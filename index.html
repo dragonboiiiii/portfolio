@@ -11,31 +11,27 @@
       color: #ffffff;
       background: url('your-background.jpg') center center / cover no-repeat fixed;
       background-color: #0a0a0a;
-      backdrop-filter: blur(0px);
+    }
+
+    * {
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: bold;
+      color: #a6c2bb;
+      text-shadow: 0 0 2px #000, 0 0 5px #5fa091, 0 0 8px #2d4c46;
     }
 
     header {
       text-align: center;
       padding: 40px 10px 20px;
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #00ffee;
-      text-shadow: 0 0 12px #00ffee;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #b2f1ff;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
     }
 
     .divider {
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
       margin: 40px auto;
       width: 85%;
     }
@@ -46,13 +42,12 @@
       margin: 0 auto;
       max-width: 1000px;
       animation: fadeIn 1s ease-in-out;
-    }
-
-    h2 {
-      color: #aff;
-      font-size: 1.8em;
-      margin-bottom: 18px;
-      text-shadow: 0 0 6px #00ffee;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(15px) saturate(120%);
+      -webkit-backdrop-filter: blur(15px) saturate(120%);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      margin-bottom: 40px;
     }
 
     .flex-list {
@@ -65,26 +60,19 @@
 
     .flex-list a,
     .flex-list div {
-      color: #00ffee;
       text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 10px;
-      transition: all 0.2s ease;
+      padding: 10px 18px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
     .flex-list a:hover {
-      background: rgba(0, 255, 255, 0.1);
-      text-shadow: 0 0 12px #00ffee;
-    }
-
-    .flex-list div {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(0, 255, 255, 0.2);
-    }
-
-    .flex-list div:hover {
-      background: rgba(0, 255, 255, 0.08);
-      text-shadow: 0 0 10px #00ffee;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
 
     @media (max-width: 600px) {
@@ -103,7 +91,7 @@
 <body>
 
   <header>
-    <h1>Dragon Boi's Portfolio</h1>
+    <h1>Berry Boi's Portfolio</h1>
     <p>aka @epeelfriends on Discord</p>
   </header>
 
@@ -123,34 +111,23 @@
   <div class="divider"></div>
 <section>
   <h2>
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank" style="color: #00ffee; text-decoration: none;">
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
       Android Games
     </a>
   </h2>
   <div class="flex-list">
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
-      <img src="icons/kick.png" alt="Kick" style="width:40px; vertical-align:middle; margin-right:8px;">
-      Kick the Snowman
-    </a>
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
-      <img src="icons/slap.png" alt="Slap" style="width:40px; vertical-align:middle; margin-right:8px;">
-      Slap Bunny
-    </a>
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
-      <img src="icons/slaphd.png" alt="Slap HD" style="width:40px; vertical-align:middle; margin-right:8px;">
-      Slap Bunny HD
-    </a>
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
-      <img src="icons/globbert.png" alt="Globbert" style="width:40px; vertical-align:middle; margin-right:8px;">
-      Globbert ANDROID PORT
-    </a>
-    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">
-      <img src="icons/john.png" alt="Bacteria John" style="width:40px; vertical-align:middle; margin-right:8px;">
-      Talking Bacteria John ANDROID PORT
-    </a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.bacteria.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.chewy.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.fuzz.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.globbert.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.paftalk.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.slapbunny.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.slapbunnyhd.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.snowman.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.sock.apk</a>
+    <a href="https://mega.nz/folder/UTcGjbbR#Y0wUejtezUGIEqpfsXp8hw" target="_blank">com.dragonboi.talkingtimmycat.apk</a>
   </div>
 </section>
-
 
   <div class="divider"></div>
 
@@ -161,18 +138,11 @@
       <a href="https://space.bilibili.com/3546820925983492" target="_blank">Bilibili</a>
       <a href="https://www.reddit.com/user/Epeelstan/" target="_blank">Reddit</a>
       <a href="https://x.com/CarterHoff90568" target="_blank">Twitter/X</a>
+      <a href="https://dragonboiiiiii.itch.io/" target="_blank">Itch.IO</a>
     </div>
   </section>
 
   <div class="divider"></div>
-
-  <section>
-    <h2>Special Thanks</h2>
-    <div class="flex-list">
-      <div>All of my fans!!!</div>
-    </div>
-  </section>
-<div class="divider"></div>
 
 <section>
   <h2>WIP Websites</h2>
@@ -180,6 +150,9 @@
     <a href="https://dragonboiiiii.github.io/DBGG/" target="_blank">Dragon Boi's Game Galley</a>
     <a href="https://dragonboiiiii.github.io/testwin9/" target="_blank">Windows 9 Web OS</a>
     <a href="https://dragonboiiiii.github.io/PvZAPKSandIPAs/" target="_blank">PvZ APK + IPA Repo</a>
+    <a href="https://dragonboiiiii.github.io/PvZTC/iframe.html" target="_blank">PvZ Time Chaos</a>
+    <a href="https://dragonboiiiii.github.io/PVZTCMAKER/" target="_blank">PvZ Time Chaos Maker!</a>
+    <a href="https://dragonboiiiii.github.io/GARDENGREENMUTATIONS/" target="_blank">Garden Greens: Mutated (INCLUDES LEAKED PVZ3 CONTENT)</a>
   </div>
 </section>
 <div class="divider"></div>
@@ -201,6 +174,17 @@
     <a href="https://stuffed18.github.io/ipa-archive-updated/" target="_blank">Stuffed's Updated IPA Archive</a>
   </div>
 </section>
+
+<div class="divider"></div>
+
+<section>
+  <h2>Special Thanks</h2>
+  <div class="special-thanks">
+    <div>All of my fans!!!</div>
+  </div>
+</section>
+
+<div class="divider"></div>
 
 
 </body>
